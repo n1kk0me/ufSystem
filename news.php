@@ -43,6 +43,7 @@
 							<?php
 								error_reporting(0);
 
+								//one as an example
 								$xmlTarget=("http://www.gmanetwork.com/news/rss/scitech/weather");
 
 								$thisXMLDoc = new DOMDocument();
@@ -56,6 +57,7 @@
 
 									$thisItemDate = str_replace("+0800", "", $thisItemDate);
 
+									//filter VISAYAS as demo, dropdown feature to choose LUZON, VISAYAS, MINDANAO
 									if (strpos($thisItemTitle, 'Visayas') !== false) {
 								?>									
 							<div class="table-container">
